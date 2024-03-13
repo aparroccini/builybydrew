@@ -1,0 +1,50 @@
+.config-info{
+	margin-bottom: 35px;
+}
+.config-info .config-intro-text {
+	font-size: 22px;
+	font-weight: 500;
+	padding-bottom: 15px;
+}
+.config-info .config-text{
+	border-top: 1px solid rgba(0,0,0,.1);
+	padding-top: 15px;
+	margin-bottom: 15px;
+}
+.config-info .config-text:first-of-type{
+	border-top: 0;
+}
+.config-info .config-text-for{
+	min-width: 210px;
+    display: inline-block;
+}
+.config-info .config-text-pass{
+	color: #28a745;
+}
+.config-info .config-text-fail{
+	color: #dc3545;
+}
+
+/* Demo Importer  */
+@media (min-width: 1120px){
+	.ocdi__gl-item {
+    	width: calc(25% - 20px);
+    	margin: 0 20px 20px 0;
+	}
+}
+h4.ocdi__gl-item-title{
+	display: block;
+	width: 100% !important;
+	font-size: 13px;
+	margin-bottom: 12px;
+	white-space: normal;
+}
+.ocdi__gl-item-button + .ocdi__gl-item-button{
+	float: left;
+}
+.ocdi__gl-item-button{
+	margin-bottom: 15px !important;
+}
+.ocdi__gl-item-image{
+	height:100% !important;
+}

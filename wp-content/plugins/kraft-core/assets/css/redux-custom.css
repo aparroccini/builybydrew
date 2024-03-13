@@ -1,0 +1,97 @@
+/*
+ * Adds styling for wp admin
+ */
+
+.redux-notice-field {
+    border-left: 0;
+    box-shadow: none;
+    background-color: #efefef;
+}
+
+.redux-notice-field p {
+    color: #151515;
+    font-weight: 600;
+}
+
+.form-table.no-border+.redux-notice-field {
+    margin-top: 30px;
+}
+
+.custom-css-field>th {
+    display: none;
+}
+
+.custom-css-section+.form-table.form-table-section {
+    margin-left: 0 !important;
+    width: 100%;
+}
+
+.redux-field.redux-container-button_set span.ui-icon {
+    width: 0px;
+    height: 0px;
+    background-image: none;
+}
+
+#kraft_theme_settings-h1-font .typography-family {
+    display: none;
+}
+
+#kraft_theme_settings-h2-font .typography-family {
+    display: none;
+}
+
+#kraft_theme_settings-h3-font .typography-family {
+    display: none;
+}
+
+#kraft_theme_settings-h4-font .typography-family {
+    display: none;
+}
+
+#kraft_theme_settings-h5-font .typography-family {
+    display: none;
+}
+
+#kraft_theme_settings-h6-font .typography-family {
+    display: none;
+}
+
+#kraft_theme_settings-p-font .typography-family {
+    display: none;
+}
+
+#kraft_theme_settings-portfolio-primary-title .typography-family {
+    display: none;
+}
+
+#kraft_theme_settings-portfolio-secondary-title .typography-family {
+    display: none;
+}
+
+#kraft_theme_settings-portfolio-meta-button .typography-family {
+    display: none;
+}
+
+#kraft_theme_settings-blog-banner-title .typography-family {
+    display: none;
+}
+
+#kraft_theme_settings-blog-post-title .typography-family {
+    display: none;
+}
+
+#kraft_theme_settings-blog-comment-title .typography-family {
+    display: none;
+}
+
+#kraft_theme_settings-blog-widget-title .typography-family {
+    display: none;
+}
+
+#kraft_theme_settings-blog-post-button .typography-family {
+    display: none;
+}
+
+#kraft_theme_settings-general-button .typography-family {
+    display: none;
+}

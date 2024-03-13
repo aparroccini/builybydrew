@@ -1,0 +1,368 @@
+/*
+ * Adds styling for additional visual composer elements
+ */
+
+/* Icons */
+
+
+.vc_element-icon.kraft-address-block-icon { background-image: url("../icons/address-block.png"); }
+.vc_element-icon.kraft-content-box-icon { background-image: url("../icons/content-box.png"); }
+.vc_element-icon.kraft-cta-icon { background-image: url("../icons/cta.png"); }
+.vc_element-icon.kraft-heading-icon { background-image: url("../icons/heading.png"); }
+.vc_element-icon.kraft-image-box-icon { background-image: url("../icons/image-box.png"); }
+.vc_element-icon.kraft-image-slider-icon { background-image: url("../icons/img-slider.png"); }
+.vc_element-icon.kraft-list-block-icon { background-image: url("../icons/list-block.png"); }
+.vc_element-icon.kraft-list-icon { background-image: url("../icons/lists.png"); }
+.vc_element-icon.kraft-portfolio-section-icon { background-image: url("../icons/portfolio-section.png"); }
+.vc_element-icon.kraft-portfolio-slider-icon { background-image: url("../icons/portfolio-slider.png"); }
+.vc_element-icon.kraft-team-member-icon { background-image: url("../icons/team.png"); }
+.vc_element-icon.kraft-pricing-box-icon { background-image: url("../icons/pricing.png"); }
+.vc_element-icon.kraft-subscription-form-icon { background-image: url("../icons/subscription.png"); }
+.vc_element-icon.kraft-image-gallery-icon { background-image: url("../icons/image-gallery.png"); }
+.vc_element-icon.kraft-portfolio-listing-icon { background-image: url("../icons/portfolio-listing.png"); }
+.vc_element-icon.kraft-button-icon { background-image: url("../icons/button.png"); }
+.vc_element-icon.kraft-image-before-after-icon { background-image: url("../icons/before-after.png"); }
+.vc_element-icon.kraft-portfolio-carousel-icon { background-image: url("../icons/portfolio-carousel.png"); }
+.vc_element-icon.kraft-counter-icon { background-image: url("../icons/counter.png"); }
+
+
+
+.wpb_el_type_css_editor.no-vc-border .vc_border > label:nth-of-type(1),
+.wpb_el_type_css_editor.no-vc-border .vc_border > .vc_top,
+.wpb_el_type_css_editor.no-vc-border .vc_border > .vc_right,
+.wpb_el_type_css_editor.no-vc-border .vc_border > .vc_bottom,
+.wpb_el_type_css_editor.no-vc-border .vc_border > .vc_left,
+.wpb_el_type_css_editor.no-vc-border .vc_settings label:nth-of-type(1),
+.wpb_el_type_css_editor.no-vc-border .vc_settings label:nth-of-type(3),
+.wpb_el_type_css_editor.no-vc-border .vc_settings label:nth-of-type(4),
+.wpb_el_type_css_editor.no-vc-border .vc_settings .color-group:nth-of-type(1),
+.wpb_el_type_css_editor.no-vc-border .vc_settings .vc_border-style,
+.wpb_el_type_css_editor.no-vc-border .vc_settings .vc_border-radius,
+.wpb_el_type_css_editor.no-vc-background .vc_settings label:nth-of-type(2),
+.wpb_el_type_css_editor.no-vc-background .vc_settings .color-group ~ .color-group,
+.wpb_el_type_css_editor.no-vc-background .vc_settings .vc_background-image,
+.wpb_el_type_css_editor.no-vc-background .vc_settings .vc_background-style {
+	display:none;
+}
+
+
+
+/* VAC Parmas CSS */
+
+
+/*On Off Checkbox Switch*/
+.onoffswitch {
+	position: relative;
+	width: 95px;
+	display: inline-block;
+	float: left;
+	margin-right: 15px;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select: none;
+}
+.onoffswitch-checkbox {
+	display: none !important;
+}
+.onoffswitch-label {
+	display: block;
+	overflow: hidden;
+	cursor: pointer;
+	border: 0px solid #999999;
+	border-radius: 0px;
+}
+.onoffswitch-inner {
+	width: 200%;
+	margin-left: -100%;
+	-moz-transition: margin 0.3s ease-in 0s;
+	-webkit-transition: margin 0.3s ease-in 0s;
+	-o-transition: margin 0.3s ease-in 0s;
+	transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner > div {
+	float: left;
+	position: relative;
+	width: 50%;
+	height: 24px;
+	padding: 0;
+	line-height: 24px;
+	font-size: 12px;
+	color: white;
+	font-weight: bold;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.onoffswitch-inner .onoffswitch-active {
+	padding-left: 15px;
+	background-color: #CCCCCC;
+	color: #FFFFFF;
+}
+.onoffswitch-inner .onoffswitch-inactive {
+	padding-right: 15px;
+	background-color: #CCCCCC;
+	color: #FFFFFF;
+	text-align: right;
+}
+.onoffswitch-switch {
+	/*width: 50px;*/
+	width:35px;
+	margin: 0px;
+	text-align: center;
+	border: 0px solid #999999;
+	border-radius: 0px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+.onoffswitch-active .onoffswitch-switch {
+	background: #3F9CC7;
+	left: 0;
+}
+.onoffswitch-inactive .onoffswitch-switch {
+	background: #7D7D7D;
+	right: 0;
+}
+.onoffswitch-active .onoffswitch-switch:before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	/*left: 50px;*/
+	left:35px;
+	border-style: solid;
+	border-color: #3F9CC7 transparent transparent #3F9CC7;
+	/*border-width: 12px 8px;*/
+	border-width: 15px;
+}
+.onoffswitch-inactive .onoffswitch-switch:before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	/*right: 50px;*/
+	right:35px;
+	border-style: solid;
+	border-color: transparent #7D7D7D #7D7D7D transparent;
+	/*border-width: 12px 8px;*/
+	border-width: 50px;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+	margin-left: 0;
+}
+
+.onoffswitch-inactive .onoffswitch-switch:before,.onoffswitch-active .onoffswitch-switch:before {
+    border-color:transparent;
+}
+.onoffswitch-switch{
+    width:50px;
+}
+.onoffswitch-active .onoffswitch-switch{
+    background: #305288;
+}
+.onoffswitch-inactive .onoffswitch-switch{
+    background:#bcbcbc;
+}
+
+/* Param heading */
+
+.vc_wrapper-param-type-kraft_heading_label {
+	padding: 10px 15px;
+	font-size: 14px;
+	background: #e6e6e6;
+	color: #6C6C6C;
+	margin-bottom:0;
+	margin-top: 10px;
+}
+.vc_wrapper-param-type-kraft_heading_label.no-top-margin{
+	margin-top:0;
+}
+.vc_wrapper-param-type-kraft_heading_label h4{
+	margin:0;
+}
+.vc_wrapper-param-type-kraft_heading_label p {
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* spacing param */
+
+.ct-spacing .ct-spacing-input-block {
+  margin-right: 10px;
+  margin-bottom: 7px;  
+  white-space: nowrap;
+  float: left;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.ct-spacing .ct-spacing-input-block span.ct-spacing-icon {
+  width: auto;
+  display: inline-block;
+  min-width: 16px;
+  padding: 3px 4px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.ct-spacing .ct-spacing-input-block input.ct-spacing-input {
+  border-left: 0;
+  margin-bottom: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: -3px;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  line-height: 19px;
+  display: inline-block;  
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);
+  background-color: #fff;
+  color: #333;
+  -webkit-transition: 0.05s border-color ease-in-out;
+  transition: 0.05s border-color ease-in-out;
+  width: 60px;
+  text-align: center;
+}
+
+
+/* Responsive */
+/* =Common
+ *----------------------------------------------------*/
+.ct-responsive-wrapper,
+.ct-responsive-wrapper * {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+/* =Common
+ *----------------------------------------------------*/
+.ct-responsive-wrapper {
+  /* =Inputs
+   *----------------------------------------------------*/
+}
+.ct-responsive-wrapper .ct-tooltip {
+  position: absolute;
+  content: '';
+  color: #fff;
+  top: -35px;
+  left: 0px;
+  text-shadow: none;
+  white-space: nowrap;
+  background: #444;
+  padding: 3px 10px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 5px;
+  -moz-transition: visibility 0s linear .3s;
+  font-size: 11px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.ct-responsive-wrapper .ct-tooltip:before {
+  content: "";
+  position: absolute;
+  border-top: 5px solid #444444;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  top: 100%;
+  left: 10px;
+}
+.ct-responsive-wrapper .ct-responsive-items {
+  /* =Simplify
+     *----------------------------------------------------*/
+}
+.ct-responsive-wrapper .ct-responsive-items .simplify {
+  margin-right: 10px;
+  margin-bottom: 7px;
+  white-space: nowrap;
+  float: left;
+  display: inline-block;
+  line-height: 23px;
+  cursor: pointer;
+  position: relative;
+}
+.ct-responsive-wrapper .ct-responsive-items .simplify:hover .ct-tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -32px;
+  left: -7px;
+}
+.ct-responsive-wrapper .ct-responsive-items .simplify .ct-tooltip {
+  opacity: 0;
+  visibility: hidden;
+  top: -45px;
+  left: -7px;
+  background: #00aef0;
+}
+.ct-responsive-wrapper .ct-responsive-items .simplify .ct-tooltip:before {
+  border-top-color: #00aef0;
+}
+.ct-responsive-wrapper .ct-responsive-items .simplify label {
+  font-weight: 600;
+}
+.ct-responsive-wrapper .ct-responsive-items .simplify .simplify-icon {
+  font-size: 20px;
+  line-height: 27px;
+}
+.ct-responsive-wrapper .ct-responsive-items .ct-responsive-item {
+  position: relative;
+  margin-right: 10px;
+  white-space: nowrap;
+  float: left;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+.ct-responsive-wrapper .ct-responsive-items .ct-responsive-item .ct-icon {
+  width: auto;
+  display: inline-block;
+  min-width: 16px;
+  padding: 3px 4px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.ct-responsive-wrapper .ct-responsive-items .ct-responsive-item .ct-icon:hover .ct-tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -30px;
+}
+.ct-responsive-wrapper .ct-responsive-items .ct-responsive-item .ct-responsive-input {
+  border-left: 0;
+  margin-bottom: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: -4px;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  line-height: 19px;
+  display: inline-block;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);
+  background-color: #fff;
+  color: #333;
+  -webkit-transition: 0.05s border-color ease-in-out;
+  transition: 0.05s border-color ease-in-out;
+  width: 45px;
+  text-align: center;
+}

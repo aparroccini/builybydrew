@@ -1,0 +1,19 @@
+/*
+ * Add any SASS formatted CSS necessary for your extension here.  Use of this file is optional and is only for those
+ * who wish to output the file CSS using a SASS compiler.
+ *
+ * Please be sure to rename the 'my-extension' part of the file name to the name of your extension. Pleas use
+ * dashes instead of underscores.
+ */
+
+.redux-container-checkbox label {
+    vertical-align: top;
+    width: 100%
+}
+
+.redux-container-checkbox label .field-desc {
+    margin-top: 0;
+    float: left;
+    width: 93%;
+    clear: none
+}

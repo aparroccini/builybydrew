@@ -1,0 +1,111 @@
+/*
+ * Adds styling for wp admin
+ */
+
+#poststuff .inside{
+    margin-top:15px;
+    padding-bottom:15px;    
+}
+#page_meta_box > .inside{
+    margin-top:6px;
+}
+#page_meta_box .rwmb-tabs-left .rwmb-tab-nav a {
+    padding:10px 20px 10px 10px;
+}
+#page_meta_box .rwmb-tabs-left .rwmb-tab-panel{
+    padding:9px 20px;
+}
+#page_meta_box .rwmb-row{
+    margin-bottom: 3px;
+}
+#page_meta_box .wp-color-result{
+    height:23px;
+}
+#page_meta_box  .wp-color-result:after{
+    line-height: 24px;
+}
+#page_meta_box .rwmb-label + .rwmb-input.ui-sortable,.rwmb-media-add{
+    padding-top:3px;
+}
+#page_meta_box .rwmb-tab-nav i{
+    vertical-align: top;
+}
+.rwmb-field:not(:last-of-type){
+    margin-bottom: 18px;
+}
+.rwmb-field.rwmb-divider-wrapper{
+    margin-bottom: 15px;
+}
+#page_meta_box .rwmb-divider-wrapper hr{
+    margin:0;
+}
+#portfolio_settings_box label{
+    display: inline-block;
+    min-width: 150px;
+}
+.rwmb-tab-panel.rwmb-tab-panel-menu label,.rwmb-tab-panel.rwmb-tab-panel-footer label{
+    display: inline-block;
+    min-width: 120px;
+}
+
+/* Overrides*/
+
+.wp-admin .edit-post-meta-boxes-area #poststuff h2.hndle {
+  background-color: #eaeaea;
+}
+.wp-admin .postbox {
+  border: 1px solid #eaeaea;
+  box-shadow: none;
+}
+.wp-admin .js .postbox .handlediv {
+  position: relative;
+  z-index: 10;
+}
+.edit-post-layout__metaboxes:not(:empty){
+    padding-top:40px;
+}
+#poststuff .inside {
+    margin-top: 25px;
+    padding-bottom: 25px;
+}
+#kraft_meta_multi_media_space_between,
+#kraft_meta_multi_media_space_between-description{
+  margin-left: 13px;  
+}
+.postbox .handlediv{
+    position: relative;
+    z-index: 1;
+}
+.toggle-indicator{
+    color:#151515;
+}
+#kraft_meta_portfolio_desc-tmce.wp-switch-editor{
+    height:34px;
+}
+.rwmb-tab-featured-image,
+.rwmb-tab-featured-audio, 
+.rwmb-tab-featured-quote,
+.rwmb-tab-featured-link{
+         padding: 8px 10px 10px;
+}
+.rwmb-tab-featured-image a,
+.rwmb-tab-featured-audio a,  
+.rwmb-tab-featured-quote a,
+.rwmb-tab-featured-link a{
+    padding:0;
+}
+#post_meta_featured_media_box .rwmb-tab-panel{
+    padding:15px 10px;
+}
+#page_meta_box  .inside {
+    margin-top: 6px;
+}
+#page_meta_box .rwmb-tabs-left .rwmb-tab-panel{
+    padding: 15px 20px;
+}
+#page_meta_box .wp-color-result{
+    height: 25px;
+}
+.wp-color-result-text{
+    height:24px;
+}
